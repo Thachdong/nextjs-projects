@@ -1,0 +1,32 @@
+.user-header {
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+
+  &__logo {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 300;
+    font-size: 2rem;
+  }
+
+  &__menu,
+  &__right-box {
+    display: flex;
+    gap: 2rem;
+  }
+
+  &__menu {
+    flex-grow: 2;
+
+    a {
+      border-bottom: 2px solid transparent;
+      transition: .125s ease-in-out;
+
+      &:hover {
+        border-color: var(--primary);
+      }
+    }
+  }
+}
