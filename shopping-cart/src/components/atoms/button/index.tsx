@@ -12,7 +12,9 @@ export type TButtonProps = React.DetailedHTMLProps<
     | "primary"
     | "secondary"
     | "white"
-    | "rounded";
+    | "rounded"
+    | "outline-primary"
+    | "outline-secondary";
 };
 
 export const Button: React.FC<TButtonProps> = ({

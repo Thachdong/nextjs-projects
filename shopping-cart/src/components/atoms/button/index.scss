@@ -18,6 +18,28 @@
     }
   }
 
+  &__outline-primary {
+    border: 1px var(--primary) solid;
+    font-weight: bold;
+    background: transparent;
+    color: var(--primary);
+
+    &:hover {
+      background: rgba($color: var(--primary), $alpha: 0.25);
+    }
+  }
+
+  &__outline-secondary {
+    border: 1px var(--secondary) solid;
+    font-weight: bold;
+    background: transparent;
+    color: var(--secondary);
+
+    &:hover {
+      background: rgba($color: var(--secondary), $alpha: 0.25);
+    }
+  }
+
   &__transparent {
     background: transparent;
     color: var(--primary);

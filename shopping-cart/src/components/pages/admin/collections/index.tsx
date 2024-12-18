@@ -3,7 +3,7 @@
 import { Table } from "@/components/atoms/table";
 import { AdminPageHeader } from "@/components/molecules/admin-page-header";
 import { TCollection } from "@/types/collection";
-import { ColumnDef, createColumnHelper } from "@tanstack/react-table";
+import { createColumnHelper } from "@tanstack/react-table";
 import React, { useMemo } from "react";
 
 type TAdminCollectionPageProps = {
@@ -15,14 +15,14 @@ const columnHelper = createColumnHelper<TCollection>();
 export const AdminCollectionPage: React.FC<TAdminCollectionPageProps> = ({
   collections,
 }) => {
-  const columns: ColumnDef<TCollection, any>[] = useMemo(
+  const columns: TColumnDef<TCollection>[] = useMemo(
     () => [
       columnHelper.accessor("name", { header: "Collection Name" }),
       columnHelper.accessor("description", { header: "Description" }),
       columnHelper.accessor("createdAt", { header: "Date Created" }),
       columnHelper.accessor("updatedAt", { header: "Date Updated" }),
     ],
-    [columnHelper]
+    []
   );
   return (
     <section className="flex flex-col gap-4 p-4">

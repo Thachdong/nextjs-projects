@@ -1,16 +1,15 @@
-'use client'
+"use client";
 import {
   useReactTable,
   getCoreRowModel,
   flexRender,
-  ColumnDef,
 } from "@tanstack/react-table";
 import React, { useMemo } from "react";
 import style from "./index.module.scss";
 
 interface ITableProps<T> {
   data: T[];
-  columns: ColumnDef<T, any>[];
+  columns: TColumnDef<T>[];
   showFooter?: boolean;
   tableClassName?: string;
   theadClassName?: string;
@@ -25,7 +24,7 @@ export function Table<T>({
   columns,
   showFooter = false,
   ...classNames
-}: ITableProps<T>) {
+}: Readonly<ITableProps<T>>) {
   const table = useReactTable({
     data,
     columns,
@@ -46,7 +45,7 @@ export function Table<T>({
         ))}
       </tr>
     ));
-  }, [table]);
+  }, [table, classNames]);
 
   const body = useMemo(() => {
     const { rows } = table.getRowModel();
@@ -63,7 +62,7 @@ export function Table<T>({
         </tr>
       );
     });
-  }, [table]);
+  }, [table, classNames]);
 
   const footer = useMemo(() => {
     const footerGroups = table.getFooterGroups();

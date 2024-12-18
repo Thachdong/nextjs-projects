@@ -20,7 +20,7 @@ const MOCK_CONTACT_PAGE = [
   {
     page: EPageName.CONTACT_PAGE,
     key: "banner",
-    value: { content: "/assets/images/contact-banner.png" },
+    value: { content: "setting/contact-banner.png" },
   },
 ];
 
@@ -28,20 +28,20 @@ const MOCK_ABOUT_PAGE = [
   {
     page: EPageName.ABOUT_PAGE,
     key: "banner",
-    value: { content: "/assets/images/about-banner.png" },
+    value: { content: "setting/about-banner.png" },
   },
   {
     page: EPageName.ABOUT_PAGE,
     key: "collections",
-    value: { content: ["collection-1", "collection-2"] },
+    value: { content: ["cm4tbjn7n0000m2f0x19psj93", "cm4tbjn7n0001m2f0fpcjr90i"] },
   },
   {
     page: EPageName.ABOUT_PAGE,
     key: "founders",
     value: {
       content: [
-        { name: "dongt", avatar: "/assets/images/collection-banner-1.png" },
-        { name: "tuyenp", avatar: "/assets/images/collection-banner-2.png" },
+        { name: "dongt", avatar: "setting/collection-banner-1.png" },
+        { name: "tuyenp", avatar: "setting/collection-banner-2.png" },
       ],
     },
   },
@@ -78,7 +78,7 @@ const MOCK_COLLECTION_PAGE = [
     page: EPageName.COLLECTION_PAGE,
     key: "topCollection",
     value: {
-      content: ["coll-1", "coll-2", "coll-3"],
+      content: ["cm4tbjn7n0000m2f0x19psj93", "cm4tbjn7n0001m2f0fpcjr90i", "cm4tbjn7n0002m2f06pman1px"],
     },
   },
   {
@@ -94,7 +94,7 @@ const MOCK_HOME_PAGE = [
   {
     page: EPageName.HOME_PAGE,
     key: "heroBanner",
-    value: { url: "/assets/images/home-banner.png" },
+    value: { url: "setting/home-banner.png" },
   },
   {
     page: EPageName.HOME_PAGE,
@@ -104,7 +104,7 @@ const MOCK_HOME_PAGE = [
   {
     page: EPageName.HOME_PAGE,
     key: "topCollection",
-    value: { content: "coll-1" },
+    value: { content: "cm4tbjn7n0000m2f0x19psj93" },
   },
   {
     page: EPageName.HOME_PAGE,
@@ -135,12 +135,12 @@ const MOCK_HOME_PAGE = [
   {
     page: EPageName.HOME_PAGE,
     key: "onSaleCollections",
-    value: ["coll-2", "coll-3"],
+    value: ["cm4tbjn7n0000m2f0x19psj93"],
   },
   {
     page: EPageName.HOME_PAGE,
     key: "homeCollections",
-    value: ["coll-4", "coll-5"],
+    value: ["cm4tbjn7n0000m2f0x19psj93"],
   },
 ];
 
@@ -167,35 +167,35 @@ const MOCK_COLLECTION = [
   {
     name: "New Arrival",
     description: "Recently added shirts!",
-    bannerUrl: "/assets/images/collection-banner-1.png",
+    bannerUrl: "collection/collection-banner-1.png",
   },
   {
     name: "Top Sellers",
     description: "Browse our top-selling products",
-    bannerUrl: "/assets/images/collection-banner2.png",
+    bannerUrl: "collection/collection-banner2.png",
   },
   {
     name: "BUY 2 GET 1 FREE",
     description:
       "End of season sale. Buy any 2 items of your choice and get 1 free.",
-    bannerUrl: "/assets/images/collection-banner1.png",
+    bannerUrl: "collection/collection-banner1.png",
   },
   {
     name: "PEACE OF MIND",
     description:
       "A one-stop platform for all your fashion needs, hassle-free. Buy with a peace of mind.",
-    bannerUrl: "/assets/images/collection-banner2.png",
+    bannerUrl: "collection/collection-banner2.png",
   },
   {
     name: "BUY 2 GET 1 FREE",
     description:
       "End of season sale. Buy any 2 items of your choice and get 1 free.",
-    bannerUrl: "/assets/images/collection-banner1.png",
+    bannerUrl: "collection/collection-banner1.png",
   },
   {
     name: "Spring collection",
     description: "Spring collection",
-    bannerUrl: "/assets/images/collection-banner1.png",
+    bannerUrl: "collection/collection-banner1.png",
   },
 ];
 
@@ -218,67 +218,67 @@ const MOCK_PRODUCTS = [
     name: "Áo polo len kẻ sọc tay ngắn xanh đậm",
     description: "Áo polo len kẻ sọc tay ngắn xanh đậm",
     imgUrl:
-      "https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-m3j5t3x07oh478_tn.webp",
+      "product/product-1.png",
     price: 139,
     stock: 999,
-    collectionId: "cm4oduihg0000566n09ap6q4c",
+    collectionId: "cm4tbjn7n0000m2f0x19psj93",
   },
   {
     name: "Set đầm 2 dây ôm body trắng áo khoác cardigan kẻ caro xanh dương S62",
     description:
       "Set đầm 2 dây ôm body trắng áo khoác cardigan kẻ caro xanh dương S62",
     imgUrl:
-      "https://down-vn.img.susercontent.com/file/sg-11134201-23020-gjs5hs9vy8mv3e_tn.webp",
+      "product/product-1.png",
     price: 139,
     stock: 999,
-    collectionId: "cm4oduihg0000566n09ap6q4c",
+    collectionId: "cm4tbjn7n0000m2f0x19psj93",
   },
   {
     name: "Áo len trễ vai tay dài đỏ đô",
     description: "Áo len trễ vai tay dài đỏ đô",
     imgUrl:
-      "https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-m3j5t3x07oh478_tn.webp",
+      "product/product-1.png",
     price: 139,
     stock: 999,
-    collectionId: "cm4oduihg0000566n09ap6q4c",
+    collectionId: "cm4tbjn7n0001m2f0fpcjr90i",
   },
   {
     name: "Đầm hoa nhí suông dài xẻ tà nhún ngực tay ngắn bo phồng nhẹ mặc được 2 kiểu D85",
     description:
       "Đầm hoa nhí suông dài xẻ tà nhún ngực tay ngắn bo phồng nhẹ mặc được 2 kiểu D85",
     imgUrl:
-      "https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-m3j5t3x07oh478_tn.webp",
+      "product/product-1.png",
     price: 139,
     stock: 999,
-    collectionId: "cm4oduihg0000566n09ap6q4c",
+    collectionId: "cm4tbjn7n0001m2f0fpcjr90i",
   },
   {
     name: "Jumpsuit xếp ly ngực thắt nơ lưng đỏ đô",
     description: "Jumpsuit xếp ly ngực thắt nơ lưng đỏ đô",
     imgUrl:
-      "https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-m3j5t3x07oh478_tn.webp",
+      "product/product-1.png",
     price: 139,
     stock: 999,
-    collectionId: "cm4oduihg0000566n09ap6q4c",
+    collectionId: "cm4tbjn7n0002m2f06pman1px",
   },
   {
     name: "Áo kiểu croptop cổ bèo trắng tay ngắn phồng ôm eo nút bọc A16",
     description:
       "Áo kiểu croptop cổ bèo trắng tay ngắn phồng ôm eo nút bọc A16",
     imgUrl:
-      "https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-m3j5t3x07oh478_tn.webp",
+      "product/product-1.png",
     price: 139,
     stock: 999,
-    collectionId: "cm4oduihg0000566n09ap6q4c",
+    collectionId: "cm4tbjn7n0002m2f06pman1px",
   },
   {
     name: "Áo sơ mi nữ tay dài beo nâu chất kate mịn chuẩn <52kg A10",
     description: "Áo sơ mi nữ tay dài beo nâu chất kate mịn chuẩn <52kg A10",
     imgUrl:
-      "https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-m3j5t3x07oh478_tn.webp",
+      "product/product-1.png",
     price: 139,
     stock: 999,
-    collectionId: "cm4oduihg0000566n09ap6q4c",
+    collectionId: "cm4tbjn7n0002m2f06pman1px",
   },
 ];
 
@@ -292,5 +292,5 @@ async function seedProduct() {
   prisma.$disconnect();
 }
 
-// seedProduct()
+seedProduct()
 // #endregion
